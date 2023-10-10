@@ -25,6 +25,7 @@ li {
 a {
   text-decoration: none;
   color: $color-white;
+  cursor: pointer;
 }
 
 .section-title {
@@ -61,7 +62,7 @@ a {
 .header-main {
   background-color: transparent;
   position: absolute;
-  z-index: 5;
+  z-index: 6;
   left: 0;
   right: 0;
 }
@@ -152,6 +153,7 @@ a {
 .title {
   font-size: 96px;
   font-weight: 700;
+  padding-bottom: 38px;
 }
 
 .top__link {
