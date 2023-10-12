@@ -20,15 +20,9 @@ function open(evt) {
     document.querySelector(`#${button}`).classList.add('tabs__content-item--active');
 }
 
-const swiper = new Swiper('.swiper', {
-    loop: true,
+const menuBtn = document.querySelector('.menu__btn');
+const menu = document.querySelector('.menu__list');
 
-    pagination: {
-        el: '.swiper-pagination',
-    },
-    effect: "fade",
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-    },
-});
+menuBtn.addEventListener('click', () =>{
+    menu.classList.toggle('menu__list--active');
+})
